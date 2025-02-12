@@ -13,7 +13,7 @@ enum EndPoint {
     
     var url: String {
         switch self {
-        case .RandomUser: return "https://randomuser.me"
+        case .RandomUser: return "https://randomuser.me/api/"
         }
     }
     
@@ -22,4 +22,6 @@ enum EndPoint {
         case .RandomUser: return "GET"
         }
     }
+    
+    var body: Data? { return nil }
 }
